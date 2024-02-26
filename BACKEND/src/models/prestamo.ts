@@ -11,18 +11,10 @@ const Prestamo = db.define('Prestamo', {
   idcliente: {
     type: DataTypes.INTEGER,
     allowNull: false,
-    references: {
-      model: 'Cliente',
-      key: 'idcliente',
-    },
   },
   idusuario: {
     type: DataTypes.INTEGER,
     allowNull: false,
-    references: {
-      model: 'Usuario',
-      key: 'idusuario',
-    },
   },
   fechaPrestamo: {
     type: DataTypes.DATE,
@@ -33,7 +25,7 @@ const Prestamo = db.define('Prestamo', {
     allowNull: false,
   },
   interes: {
-    type: DataTypes.INTEGER,
+    type: DataTypes.DECIMAL(10, 2),
     allowNull: false,
   },
   estado: {
@@ -41,13 +33,13 @@ const Prestamo = db.define('Prestamo', {
     allowNull: false,
   },
   total: {
-    type: DataTypes.INTEGER,
+    type: DataTypes.DECIMAL(10, 2),
     allowNull: false,
   },
   mora: {
-    type: DataTypes.INTEGER,
-    defaultValue: 0,
+    type: DataTypes.DECIMAL(10, 2),
     allowNull: false,
+    defaultValue: 0.00,
   },
 }, {
   timestamps: false,

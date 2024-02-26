@@ -8,24 +8,24 @@ const Venta = db.define('Venta', {
     autoIncrement: true,
     allowNull: false,
   },
-  idarticulo: {
+  idprestamo: {
     type: DataTypes.INTEGER,
-    allowNull: false,
-    references: {
-      model: 'Articulo',
-      key: 'idarticulo',
-    },
+    allowNull: true,
   },
   fechaVenta: {
     type: DataTypes.DATE,
     allowNull: false,
   },
   precio: {
-    type: DataTypes.INTEGER,
+    type: DataTypes.DECIMAL(10, 2),
     allowNull: false,
   },
   comprador: {
     type: DataTypes.STRING,
+    allowNull: false,
+  },
+  total: {
+    type: DataTypes.DECIMAL(10, 2),
     allowNull: false,
   },
 }, {

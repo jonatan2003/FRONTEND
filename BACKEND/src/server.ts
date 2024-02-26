@@ -17,6 +17,7 @@ import db from './db/connection';
 import Prestamos2Router from './routes/oldsroutes/prestamos2';
 import Loginrouter from './routes/login';
 import EmpleadosRouter from './routes/empleado';
+import PagoRouter from './routes/pago';
 
 
 class Server {
@@ -59,6 +60,7 @@ class Server {
         this.app.use('/api/ventas', VentasRouter);
         this.app.use('/api/roles', RolesRouter);
         this.app.use('/api/empleados', EmpleadosRouter);
+        this.app.use('/api/pagos', PagoRouter);
 
         this.app.use('/api/prestamos2', Prestamos2Router);
 
