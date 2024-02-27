@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Los enlaces a Bootstrap, fuentes personalizadas, estilos CSS, etc. -->
+
+  <title>SB Admin 2 - Agregar Cliente</title>
+</head>
+
+<body id="page-top">
+  <div id="wrapper">
+    <!-- Menú -->
+    <app-menu></app-menu>
+
+    <div id="content-wrapper" class="d-flex flex-column">
+      <div id="content">
+        <!-- Cabecera -->
+        <app-cabecera></app-cabecera>
+
+        <div class="container-fluid">
+          <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h3 mb-0 text-gray-800">Clientes</h1>
+          </div>
+
+          <div class="card shadow mb-4">
+            <div class="card-header py-3">
+              <h6 class="m-0 font-weight-bold text-primary">Registro de Clientes</h6>
+            </div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-lg-6 m-auto">
+                  <form [formGroup]="form" (ngSubmit)="addCliente()">
+                    <input formControlName="nombre" type="text" class="form-control" placeholder="Nombre">
+                    <span *ngIf="form.get('nombre')?.hasError('required') && form.get('nombre')?.touched">
+                      El campo nombre es <strong>requerido</strong>
+                    </span>
+
+                    <input formControlName="apellido" type="text" class="form-control mt-2" placeholder="Apellido">
+                    <span *ngIf="form.get('apellido')?.hasError('required') && form.get('apellido')?.touched">
+                      El campo apellido es <strong>requerido</strong>
+                    </span>
+
+                    <input formControlName="dni" type="number" class="form-control mt-2" placeholder="DNI">
+                    <span *ngIf="form.get('dni')?.hasError('required') && form.get('dni')?.touched">
+                      El campo DNI es <strong>requerido</strong>
+                    </span>
+
+                    <input formControlName="direccion" type="text" class="form-control mt-2" placeholder="Dirección">
+                    <span *ngIf="form.get('direccion')?.hasError('required') && form.get('direccion')?.touched">
+                      El campo dirección es <strong>requerido</strong>
+                    </span>
+
+                    <select formControlName="sexo" class="form-control mt-2">
+                      <option value="" disabled selected>Seleccione un Género</option>
+                      <option value="Masculino">Masculino</option>
+                      <option value="Femenino">Femenino</option>
+                    </select>
+                    <span *ngIf="form.get('sexo')?.hasError('required') && form.get('sexo')?.touched">
+                      El campo género es <strong>requerido</strong>
+                    </span>
+
+                    <div class="row mt-2 text-center">
+                      <div class="col-lg-6">
+                        <button routerLink="/clientes" type="button" class="btn btn-secondary">Volver</button>
+                      </div>
+                      <hr>
+                      <div class="col-lg-6">
+                        <button [disabled]="form.invalid" type="submit" class="btn btn-primary">Aceptar</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+      <i class="fas fa-angle-up"></i>
+    </a>
+  </div>
+</body>
+
+</html>

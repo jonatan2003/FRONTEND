@@ -1,0 +1,82 @@
+
+.contenedor1{
+    background-color: rgb(74, 112, 125);
+   
+    padding-left: 25rem;
+    
+    padding-bottom: 50px;
+   
+}
+.contenedor2{
+    background-color: rgb((221, 129, 8)00, 127);
+   padding-top: 50px;
+  
+   
+}
+
+.contenedor4{
+    background-color: rgb(255, 255, 255);
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+  
+}
+.text-center{
+
+    background-color: rgb(255, 255, 255);
+    padding-left: 70px;
+}
+.img{
+    border-radius: 150px;
+    padding-left: 30px;
+    padding-bottom: 15px;
+    margin-top: 10px;
+}
+.mat-card-title{
+    font-size: 25px ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.button{
+    text-align: center;
+    padding-right: 35px;
+    padding-left: 35px;
+    font-size: 20px;
+    color: blue;
+  
+}
+.mat-card-actions{
+    text-align: center;
+   
+    padding-left: 45px;
+    padding-right: 40px;
+    padding-bottom: 30px;
+    
+}
+.mat-card-content{
+    padding-left:  45px;
+}
+.mat-card{
+   
+    
+    border-bottom-right-radius: 30px;
+}
+
+.row{
+    
+padding-left: -5000px;
+}
+.xd{
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-top: 15rem;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+}
+.xd1{
+  
+   font-size: 60px;
+   text-align: center;
+   
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
