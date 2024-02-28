@@ -1,8 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { environment } from '../enviroments/environment';
-import { Roles } from '../interfaces/roles'; // Asegúrate de tener la interfaz "Roles" definida correctamente
+import { environment } from '../../enviroments/environment';
+import { Roles } from '../../interfaces/oldinterfaces/roles'; // Asegúrate de tener la interfaz "Roles" definida correctamente
 
 @Injectable({
   providedIn: 'root'

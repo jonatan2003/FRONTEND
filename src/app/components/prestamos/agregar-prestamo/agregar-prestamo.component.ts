@@ -2,12 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
-import { Prestamos } from 'src/app/interfaces/prestamos';
-import { PrestamosService } from 'src/app/services/prestamos.service';
-import { Productos } from 'src/app/interfaces/productos';
-import { ProductosService } from 'src/app/services/productos.service';
-import { Clientes } from 'src/app/interfaces/clientes'; // Asegúrate de importar correctamente tu interfaz de Cliente
-import { ClientesService } from 'src/app/services/clientes.service';
+import { Prestamos } from 'src/app/interfaces/oldinterfaces/prestamos';
+import { PrestamosService } from 'src/app/services/oldservices/prestamos.service';
+import { Productos } from 'src/app/interfaces/oldinterfaces/productos';
+import { ProductosService } from 'src/app/services/oldservices/productos.service';
+import { Clientes } from 'src/app/interfaces/oldinterfaces/clientes'; // Asegúrate de importar correctamente tu interfaz de Cliente
+import { ClientesService } from 'src/app/services/oldservices/clientes.service';
 
 @Component({
   selector: 'app-agregar-prestamo',

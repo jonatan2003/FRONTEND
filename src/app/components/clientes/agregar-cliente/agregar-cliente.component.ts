@@ -2,8 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
-import { ClientesService } from 'src/app/services/clientes.service';
-import { Clientes } from 'src/app/interfaces/clientes';
+import { ClientesService } from 'src/app/services/oldservices/clientes.service';
+import { Clientes } from 'src/app/interfaces/oldinterfaces/clientes';
 
 @Component({
   selector: 'app-agregar-cliente',

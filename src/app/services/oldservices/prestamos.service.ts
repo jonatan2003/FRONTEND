@@ -1,8 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { environment } from '../enviroments/environment';
-import { Prestamos } from '../interfaces/prestamos'; // Asegúrate de tener la interfaz "Prestamos" definida correctamente
+import { environment } from '../../enviroments/environment';
+import { Prestamos } from '../../interfaces/oldinterfaces/prestamos'; // Asegúrate de tener la interfaz "Prestamos" definida correctamente
 
 @Injectable({
   providedIn: 'root'

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ToastrService } from 'ngx-toastr';
-import { Prestamos } from '../../../interfaces/prestamos2';
-import { PrestamosService } from 'src/app/services/prestamos.service';
+import { Prestamos } from '../../../interfaces/oldinterfaces/prestamos2';
+import { PrestamosService } from 'src/app/services/oldservices/prestamos.service';
 
 @Component({
   selector: 'app-listar-prestamos',

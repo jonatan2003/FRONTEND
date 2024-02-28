@@ -1,8 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { environment } from '../enviroments/environment';
-import { Clientes } from '../interfaces/clientes'; // Cambiar a "Clientes" si esa es la interfaz correcta
+import { environment } from '../../enviroments/environment';
+import { Clientes } from '../../interfaces/oldinterfaces/clientes'; // Cambiar a "Clientes" si esa es la interfaz correcta
 
 @Injectable({
   providedIn: 'root'
